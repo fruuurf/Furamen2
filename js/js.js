@@ -19,3 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var background = document.getElementById("background");
     background.style.backgroundImage = "url('" + backgroundimg + "')";
 })
+
+
+//フッターの右の文のやつ(作りかけ)
+var footer_memo = document.getElementById("footer_memo");
+footer_memo.innerHTML = "a";

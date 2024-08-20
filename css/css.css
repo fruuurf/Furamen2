@@ -8,6 +8,7 @@ body{
     margin:0;
     background: var(--background);
     color: var(--text);
+    transition: 0.25s;
 }
 
 h1{
@@ -71,6 +72,8 @@ small{
     --text:#191919;
     --little-pale-text:#4b4b4b;
     --pale-text:#646464;
+
+    --footer:#e1e1e1;
 }
 
 @media (prefers-color-scheme: dark){
@@ -83,8 +86,11 @@ small{
         --text:#ffffff;
         --little-pale-text:#c8c8c8;
         --pale-text:#afafaf;
+
+        --footer:#0f0f0f;
     }
 }
+
 
 a{
     text-decoration: none;
@@ -157,6 +163,10 @@ summary:active{
 }
 
 /* インフラ系 */
+.span{
+    display: inline-block;
+}
+
 .tool_tip{
     display: inline-block;
     opacity: 0;
@@ -349,6 +359,9 @@ summary:active{
     height:25vh;
 }
 
+/* hp:ハーフページ qp:クオーターページ */
+/* spとtてなんだ */
+
 #index_minus{
     height:calc(50vh - 2.25rem);
 }
@@ -384,6 +397,10 @@ summary:active{
     padding-top:0.25rem;
 }
 
+#icon_white{
+    filter:brightness(0);
+}
+
 
 /* ヘッダー */
 #header_all{
@@ -397,6 +414,7 @@ summary:active{
     filter:drop-shadow(0px 0px 2.5px #4b4b4b);
     box-shadow:0px 5px 25px #000000;
     pointer-events: auto;
+    transition: 0.25s;
 }
 
 #header_left{
@@ -445,6 +463,100 @@ summary:active{
 {
     margin-right:0.5rem;
 }
+
+/* フッター */
+#footer_all{
+    width: calc(100vw-4rem);
+    padding:2rem;
+    margin-top:5rem;
+    background: var(--footer);
+    pointer-events: auto;
+    transition: 0.25s;
+}
+
+#footer_titie{
+    height: 1.5rem;
+}
+
+#footer_icon{
+    height:1.5rem;
+}
+
+#footer_heading{
+    display: inline-block;
+    font-family:'Noto Sans JP',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
+    font-weight: bold;
+    margin-left: 0.5rem;
+    vertical-align: top;
+}
+
+#footer_t1{
+    display: inline-block;
+    font-size:1.5rem;
+    vertical-align: top;
+    line-height:90%;
+}
+
+#footer_t2{
+    display: inline-block;
+    font-size:1.15rem;
+}
+
+.footer_flex{
+    display: flex;
+}
+
+.footer_table{
+    width: 20vw;
+}
+
+.footer_table_title{
+    margin:0;
+    height:2.5rem;
+}
+
+.footer_table_icon_td{
+    width: 1.25rem;
+}
+
+.footer_table_icon{
+    height: 1.25rem;
+    margin-right: 0.25rem;
+}
+
+.footer_table_icon_title{
+    font-size: 1rem;
+    vertical-align:middle;
+}
+
+.footer_menu{
+    height: 1.5rem;
+}
+
+#footer_flex_dark{
+    display: none;
+}
+
+#footer_flex_white{
+    display: flex;
+}
+
+@media (prefers-color-scheme: dark){
+    #footer_flex_dark{
+        display: flex;
+    }
+    #footer_flex_white{
+        display: none;
+    }
+}
+
+#footer_memo{
+    position: absolute;
+    right:5rem;
+    margin:5rem 0;
+    color: var(--pale-text);
+}
+
 
 
 /* 各設定系 */
@@ -545,6 +657,7 @@ summary:active{
     display: block;
     height:60rem;
     margin-left: auto;
+    filter:drop-shadow( #00ff7d 5px 0px 0px);
 }
 
 .aboutme_logos{
