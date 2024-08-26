@@ -212,6 +212,7 @@ summary:active{
 
 #center,.center{
     text-align: center;
+    margin:0 auto;
 }
 
 #block_center,.block_center{
@@ -243,6 +244,7 @@ summary:active{
 .button{
     display: inline-block;
     background: #0055ff;
+    color:#fff;
     padding:0.75rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
 }
@@ -347,6 +349,10 @@ summary:active{
     transition: 0.25s ease-in;
 }
 
+
+.tab{
+    margin-left: 2rem;
+}
 
 .t_space{
     height:3rem;
