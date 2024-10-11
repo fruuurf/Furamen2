@@ -63,6 +63,60 @@ small{
     color:var(--little-pale-text);
 }
 
+@media (max-width:480px) {
+    h1{
+        font-weight: bolder;
+        font-size: 2rem;
+        color:#0089ff;
+    }
+    
+    h2{
+        font-weight: bolder;
+        font-size: 2rem;
+        color:var(--text);
+    }
+    
+    h3{
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin:1rem 0;
+        color:#0089ff;
+    }
+    
+    h4{
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin:1rem 0;
+        color:var(--text);
+    }
+    
+    h5{
+        font-weight: bolder;
+        font-size: 1.25rem;
+        margin:0.5rem 0;
+        color:#0089ff;
+    }
+    
+    h6{
+        font-weight: bolder;
+        font-size: 1.25rem;
+        margin:0.5rem 0;
+        color:var(--text);
+    }
+    
+    p{
+        font-size: 1rem;
+        font-weight: 100;
+        margin:0.5rem 0;
+        color: var(--text);
+    }
+
+    small{
+        font-size:0.65rem;
+        color:var(--little-pale-text);
+    }
+}
+
 :root{
     --background:#ffffff;
     --dark-background:#afafaf;
@@ -167,6 +221,16 @@ summary:active{
     display: inline-block;
 }
 
+.mobile{
+    display:none;
+}
+
+@media (max-width:480px) {
+    .mobile{
+        display:block;
+    }
+}
+
 .tool_tip{
     display: inline-block;
     opacity: 0;
@@ -208,6 +272,14 @@ summary:active{
     display: block;
     width:25vw;
     margin:0 auto;
+}
+
+@media (max-width:480px) {
+    .center_margin75,.center_margin50,.center_margin35,.center_margin25{
+        display: block;
+        width:90vw;
+        margin:0 auto;
+    }
 }
 
 #center,.center{
@@ -273,6 +345,12 @@ summary:active{
 
 #vertical_button_end{
     border-radius:0 0 0.5rem 0.5rem;
+}
+
+@media (max-width:480px) {
+    .vertical_button{
+        width:45vw;
+    }
 }
 
 
@@ -347,6 +425,40 @@ summary:active{
     border-radius: 0.25em;
     opacity: 0;
     transition: 0.25s ease-in;
+}
+
+@media (max-width:480px) {
+    .image_button_image{
+        width:6rem;
+        height:6rem;
+    }
+    .image_button_text{
+        width:6rem;
+        height:6rem;
+        padding:0;
+    }
+    .image_button_text h4{
+        font-size:1rem;
+        margin:0.75rem 0;
+    }
+    .image_button_text p{
+        font-size:0.65rem;
+    }
+    .image_button_image_free{
+        max-height:6rem;
+        max-width: 90vw;
+    }
+    .image_button_text_free{
+        max-height:6rem;
+        padding:0;
+    }
+    .image_button_text_free h4{
+        font-size:1rem;
+        margin:1rem 0;
+    }
+    .image_button_text_free p{
+        font-size: 0.75rem;
+    }
 }
 
 
@@ -492,6 +604,57 @@ summary:active{
     margin-right:0.5rem;
 }
 
+.header_mobile{
+    display:none;
+}
+
+@media (max-width:480px) {
+    .header_all,#header_white,#header_dark{
+        display:none;
+    }
+    .header_mobile{
+        display: block;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        margin:0;
+        backdrop-filter: blur(15px) brightness(0.65);
+        z-index:100;
+        filter:drop-shadow(0px 0px 2.5px #4b4b4b);
+        box-shadow:0px 5px 25px #000000;
+        pointer-events: auto;
+        transition: 0.25s;
+    }
+    .header_mobile_logos{
+        text-decoration: none;
+        height:1.75rem;
+        position: relative;
+        padding:0.25rem 0 0 0.25rem;
+    }
+    #header_mobile_table{
+        margin:0.5rem 0 4rem 1rem;
+    }
+    #header_right{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .header_logos{
+        margin:0 0 1rem 0;
+    }
+    #header_logos_right{
+        margin:0;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    .header_mobile{
+        backdrop-filter: blur(15px) brightness(1.5);
+        filter:drop-shadow(0 0 2.5px #ffffff);
+    }
+}
+
 /* フッター */
 #footer_all{
     width: calc(100vw-4rem);
@@ -585,6 +748,22 @@ summary:active{
     color: var(--pale-text);
 }
 
+@media (max-width:480px) {
+    .footer_flex{
+        flex-direction: column;
+    }
+    .footer_table{
+        margin-bottom: 2rem;
+        width: 75vw;
+    }
+    #footer_icon{
+        display: none;
+    }
+    #footer_memo{
+        display: none;
+    }
+}
+
 
 
 /* 各設定系 */
@@ -614,12 +793,13 @@ summary:active{
 }
 
 #main_title_mini{
-    font-size:1.25rem;
+    font-size:1.5rem;
     line-height: 100%;
 }
 #main_title_mini2{
-    font-size:1.5rem;
+    font-size:2.25rem;
     line-height: 100%;
+    margin-right: 0.75rem;
 }
 
 #main_title_version{
@@ -628,6 +808,22 @@ summary:active{
     font-size:2rem;
     font-style: italic;
     pointer-events: auto;
+}
+
+@media (max-width:480px) {
+    .main_title{
+        width:75vw;
+    }
+    #main_title{
+        font-size:3.75rem;
+    }
+    #main_title_mini2{
+        margin: 0;
+    }
+    #main_title_version{
+        font-size:1.5rem;
+        line-height: 200%;
+    }
 }
 
 #page_title{
@@ -648,6 +844,22 @@ summary:active{
     margin:0.4rem auto 0;
     user-select: none;
     pointer-events:none;
+}
+
+#page_title.mobile{
+    background: linear-gradient(-135deg,#00ff7d 25%,#0089ff 85%);
+    color:var(--text);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+@media (max-width:480px) {
+    #page_title{
+        background: linear-gradient(-135deg,#00ff7d 25%,#0089ff 55%);
+        color:var(--text);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    }
 }
 
 #background{
@@ -686,15 +898,21 @@ summary:active{
     margin:0;
 }
 
+#aboutme_main_table{
+    table-layout: fixed;
+}
+
 #aboutme_main{
     vertical-align: top;
-    width:50%;
+}
+
+#aboutme_fron_table{
+    width:25vw;
 }
 
 #aboutme_fron{
     display: block;
     height:60rem;
-    margin-left: auto;
     filter:drop-shadow( #00ff7d 5px 0px 0px);
 }
 
@@ -721,4 +939,44 @@ summary:active{
 #aboutme_env tr td{
     vertical-align: top;
     padding-left:1rem;
+}
+
+@media (max-width:480px) {
+    .aboutme_logos_such{
+        margin-right: 1.5rem;;
+    }
+    .aboutme_logos_size{
+        width:2.25rem;
+        margin-bottom: 1rem;
+    }
+    #aboutme_img{
+        width:90vw;
+    }
+    .aboutme_text{
+        padding:0;
+        margin-top:1rem;
+    }
+    
+    #aboutme_center_margin50{
+        width:auto;
+        margin:0 0 0 5vw;
+        overflow-x: scroll;
+    }
+    #aboutme_main_table{
+        table-layout: fixed;
+        width:50vw;
+    }
+    #aboutme_main{
+        width:55vw;
+    }
+    #aboutme_fron{
+        height:40rem;
+        margin-top:2rem;
+    }
+    #aboutme_fron_table{
+        vertical-align:top;
+    }
+    #aboutme_main p{
+        font-size:0.9rem;
+    }
 }

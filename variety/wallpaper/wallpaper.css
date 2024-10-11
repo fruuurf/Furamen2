@@ -1,0 +1,14 @@
+.wallpaper{
+    display: flex;
+    justify-content: start;
+    flex-flow: wrap;
+}
+
+.wallpaper_such{
+    width: 20vw;
+    margin: 2rem;
+}
+
+.wallpaper_image{
+    width: 20vw;
+}
