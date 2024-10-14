@@ -1,11 +1,11 @@
 //ヘッダーフッター
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("./header.html")
+    fetch("/header.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
         });
-    fetch("./footer.html")
+    fetch("/footer.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
@@ -22,5 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //フッターの右の文のやつ(作りかけ)
+/*
 var footer_memo = document.getElementById("footer_memo");
 footer_memo.innerHTML = "a";
+*/

@@ -604,7 +604,11 @@ summary:active{
     margin-right:0.5rem;
 }
 
-.header_mobile{
+#header_mobile{
+    display:none;
+}
+
+#header_flex_dark, #header_flex_white{
     display:none;
 }
 
@@ -612,7 +616,7 @@ summary:active{
     .header_all,#header_white,#header_dark{
         display:none;
     }
-    .header_mobile{
+    #header_mobile{
         display: block;
         position:fixed;
         top:0;
@@ -693,7 +697,7 @@ summary:active{
     font-size:1.15rem;
 }
 
-.footer_flex{
+.footer_flex, .header_flex{
     display: flex;
 }
 
