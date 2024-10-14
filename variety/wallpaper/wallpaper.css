@@ -2,6 +2,8 @@
     display: flex;
     justify-content: start;
     flex-flow: wrap;
+    align-items: center;
+    margin:0 auto;
 }
 
 .wallpaper_such{
@@ -11,4 +13,23 @@
 
 .wallpaper_image{
     width: 20vw;
+}
+
+.heading{
+    margin-left:2rem;
+}
+
+@media (max-width:480px) {
+    .wallpaper_such{
+        width:40vw;
+        margin:0.75rem;
+    }
+
+    .wallpaper_image{
+        width: 40vw !important;
+    }
+
+    .heading{
+        margin-left:0.75rem;
+    }
 }

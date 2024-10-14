@@ -1,4 +1,5 @@
 //スマホ時ヘッダーが推されたらメニューを表示/非表示
+/*
 function menu_open(){
     console.log("aaa");
     mobile_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -17,3 +18,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 console.log("いｔｒせつれいおｗｓｒ");
+*/

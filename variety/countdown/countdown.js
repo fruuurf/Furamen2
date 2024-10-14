@@ -9,9 +9,9 @@ document.getElementById("カウントダウン文字").textContent = title何年
 },10)
 
 setInterval(function(){
-    const now = new Date()
-    const 引かれる時刻 = new Date(now.getFullYear()+1, now.getMonth() + 0, 0,'23','59','60')
-    const 残り = 引かれる時刻 - now
+    const now = new Date();
+    const 引かれる時刻 = new Date(now.getFullYear()+1, now.getMonth()+0, 0,'23','59','60');
+    const 残り = 引かれる時刻 - now;
 
     if(残り < 0) return false 
 

@@ -249,6 +249,11 @@ summary:active{
     transition: 0.25s;
 }
 
+.center_margin90{
+    display: block;
+    width:90vw;
+    margin:0 auto;
+}
 
 .center_margin75{
     display: block;
@@ -608,8 +613,9 @@ summary:active{
     display:none;
 }
 
-#header_flex_dark, #header_flex_white{
+#header_flex{
     display:none;
+    /* 将来的にアニメーション入れたい */
 }
 
 @media (max-width:480px) {
@@ -652,12 +658,6 @@ summary:active{
     }
 }
 
-@media (prefers-color-scheme: light){
-    .header_mobile{
-        backdrop-filter: blur(15px) brightness(1.5);
-        filter:drop-shadow(0 0 2.5px #ffffff);
-    }
-}
 
 /* フッター */
 #footer_all{
@@ -697,7 +697,7 @@ summary:active{
     font-size:1.15rem;
 }
 
-.footer_flex, .header_flex{
+.footer_flex{
     display: flex;
 }
 
