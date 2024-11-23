@@ -984,3 +984,27 @@ summary:active{
         font-size:0.9rem;
     }
 }
+
+.form_such{
+    width:50vw;
+    height:2160px;
+}
+
+@media (max-width:480px) {
+    .form_such{
+        width:90vw;
+        height:2160px;
+    }
+}
+
+.suneo_such{
+    width:35vw;
+    height:30vw;
+}
+
+@media (max-width:480px) {
+    .suneo_such{
+        width:80vw;
+        height:70vw;
+    }
+}
