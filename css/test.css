@@ -51,10 +51,6 @@ h6{
     color:var(--text);
 }
 
-h1::selection,h3::selection,h5::selection{
-    color:var(--text);
-}
-
 p{
     font-size: 1rem;
     font-weight: 100;
@@ -177,7 +173,6 @@ summary:active{
 
 ::selection {
     background-color:#0089ff;
-    filter:initial !important;
 }
 
 /* スクロールバー(共通) */
@@ -288,19 +283,6 @@ summary:active{
     .center_margin75,.center_margin50,.center_margin35,.center_margin25{
         display: block;
         width:90vw;
-        margin:0 auto;
-    }
-}
-
-@media (max-width:1280px) and (min-width:480px) {
-    .center_margin25{
-        display: block;
-        width:30vw;
-        margin:0 auto;
-    }
-    .center_margin50{
-        display: block;
-        width:55vw;
         margin:0 auto;
     }
 }
@@ -537,10 +519,6 @@ summary:active{
     color:#0089ff;
 }
 
-#color_0089ff::selection,.color_0089ff::selection{
-    color:var(--text)!important;
-}
-
 #background_0089ff,.background_0089ff{
     display: inline-block;
     background: #0089ff;
@@ -552,155 +530,7 @@ summary:active{
 }
 
 
-/* ヘッダー */
-.header_all{
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100vw;
-    margin:0;
-    backdrop-filter: blur(15px) brightness(0.65);
-    z-index:100;
-    filter:drop-shadow(0px 0px 2.5px #4b4b4b);
-    box-shadow:0px 5px 25px #000000;
-    pointer-events: auto;
-    transition: 0.25s;
-}
 
-#header_dark{
-    display: none;
-}
-
-#header_white{
-    display: block;
-}
-
-@media (prefers-color-scheme: dark){
-    #header_dark{
-        display: block;
-    }
-    #header_white{
-        display: none;
-    }
-}
-
-#header_left{
-    display: inline-block;
-    height:1.75rem;
-    padding:0.25rem 0 0 0.25rem;
-}
-
-.header_pages{
-    position: relative;
-    font-size: 1.5rem;
-    color:#fff;
-    transition: 0.25s;
-    line-height: 100%;
-    margin-right:0;
-    height:100%;
-}
-
-.header_pages:hover{
-    color:#0089ff;
-}
-
-#header_logos_left{
-    margin-left:0;
-}
-
-#header_right{
-    display: inline-block;
-    height:1.2rem;
-    position: absolute;
-    right: 1rem;
-    padding:0.5rem 0 0.25rem 0;
-}
-
-.header_logos{
-    text-decoration: none;
-    height:100%;
-    position: relative;
-}
-
-.header_pages:hover .header_tool_tip{
-    opacity: 1;
-    visibility: visible;
-}
-
-#header_logos_right
-{
-    margin-right:0.5rem;
-}
-
-#header_mobile{
-    display:none;
-}
-
-#header_flex{
-    opacity:0;
-    transition: 0.25s;
-    display:none;
-    /* 将来的にアニメーション入れたい */
-}
-
-.header_tool_tip{
-    display: inline-block;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    left:50%;
-    transform: translate(-55%,-1.5rem);
-    top: 3.5rem;
-    padding: 0.25em 0.5em;
-    color: #fff;
-    font-size:0.75rem;
-    font-weight:100;
-    border-radius: 0.5em;
-    white-space: nowrap;
-    background: #232323;
-    box-shadow: #000000 0 0 5px;
-    transition: 0.25s;
-}
-
-@media (max-width:480px) {
-    .header_all,#header_white,#header_dark{
-        display:none;
-    }
-    #header_mobile{
-        display: block;
-        position:fixed;
-        top:0;
-        left:0;
-        width: 100vw;
-        margin:0;
-        backdrop-filter: blur(15px) brightness(0.65);
-        z-index:100;
-        filter:drop-shadow(0px 0px 2.5px #4b4b4b);
-        box-shadow:0px 5px 25px #000000;
-        pointer-events: auto;
-        transition: 0.25s;
-    }
-    .header_mobile_logos{
-        text-decoration: none;
-        height:1.75rem;
-        position: relative;
-        padding:0.25rem 0 0 0.25rem;
-    }
-    #header_mobile_table{
-        margin:0.5rem 0 4rem 1rem;
-    }
-    #header_right{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-    .header_logos{
-        margin:0 0 1rem 0;
-    }
-    #header_logos_right{
-        margin:0;
-    }
-}
 
 
 /* フッター */
@@ -759,20 +589,14 @@ summary:active{
 }
 
 .footer_table_icon{
-    width: 1.25rem;
+    height: 1.25rem;
     padding-right: 0.25rem;
 }
 
 .footer_table_icon_title{
+    display: inline-block;
+    height:1.25rem;
     font-size: 1rem;
-    font-weight:lighter;
-    color:var(--text);
-    vertical-align:middle;
-}
-
-.footer_table_icon_title_mobile{
-    font-size: 1rem;
-    font-weight:lighter;
     color:#fff;
     vertical-align:middle;
 }
@@ -821,243 +645,3 @@ summary:active{
     }
 }
 
-
-
-/* 各設定系 */
-.main_title{
-    width: fit-content;
-    text-align: center;
-    margin:0 auto 0.5rem;
-    padding:0 1rem 0.5rem;
-    color:#fff;
-    text-shadow:0.5px 0 5px rgb(75, 75, 75);
-    background: linear-gradient(-135deg,#00ff7d,#0089ff);
-    user-select: none;
-    z-index:5;
-}
-
-#main_title{
-    font-family:'Noto Sans JP',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
-    font-weight: bolder;
-    font-size:3rem;
-}
-
-#main_title2{
-    display: inline-block;
-    font-family:'Noto Sans JP',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
-    font-weight: bolder;
-    text-align: left;
-}
-
-#main_title_mini{
-    font-size:1.5rem;
-    line-height: 100%;
-}
-#main_title_mini2{
-    font-size:2.25rem;
-    line-height: 100%;
-    margin-right: 0.75rem;
-}
-
-#main_title_version{
-    font-family:'Century Gothic','Futura',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
-    font-weight: bolder;
-    font-size:2rem;
-    font-style: italic;
-    pointer-events: auto;
-}
-
-@media (max-width:480px) {
-    .main_title{
-        width:75vw;
-    }
-    #main_title{
-        font-size:3.75rem;
-    }
-    #main_title_mini2{
-        margin: 0;
-    }
-    #main_title_version{
-        font-size:1.5rem;
-        line-height: 200%;
-    }
-}
-
-#page_title{
-    text-align: center;
-    background: linear-gradient(-135deg,#00ff7d 45%,#0089ff 55%);
-    color:var(--text);
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    font-family:'BahnSchrift Light','Century Gothic','Furura','BIZ UDPゴシック',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
-    font-size:1.5rem;
-    font-weight: bold;
-    filter:drop-shadow(0 0 3.5px #000);
-    z-index: 101;
-    position: fixed;
-    top:0;
-    right:0;
-    left:0;
-    margin:0.4rem auto 0;
-    user-select: none;
-    pointer-events:none;
-}
-
-#page_title.mobile{
-    background: linear-gradient(-135deg,#00ff7d 25%,#0089ff 85%);
-    color:var(--text);
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-@media (max-width:480px) {
-    #page_title{
-        background: linear-gradient(-135deg,#00ff7d 25%,#0089ff 55%);
-        color:var(--text);
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    }
-}
-
-#background{
-    color:#ffffff;
-    text-shadow:0 0 5px #000000;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index:1;
-    pointer-events: none;
-}
-
-.backgroundfilter{
-    backdrop-filter:brightness(0.75);
-    box-shadow: 0px -10vh 7vh -20px var(--background) inset;
-    transition: 0.5s;
-    position: relative;
-    z-index:-1;
-}
-
-#io{
-    border-radius: 0.5rem;
-}
-
-#aboutme_img{
-    display: inline-block;
-    width:15rem;
-    margin: 0;
-}
-
-.aboutme_text{
-    display: inline-block;
-    vertical-align: top;
-    height:15rem;
-    padding-left: 1rem;
-    margin:0;
-}
-
-#aboutme_main_table{
-    table-layout: fixed;
-}
-
-#aboutme_main{
-    vertical-align: top;
-}
-
-#aboutme_fron_table{
-    width:25vw;
-}
-
-#aboutme_fron{
-    display: block;
-    height:60rem;
-    filter:drop-shadow( #00ff7d 5px 0px 0px);
-}
-
-.aboutme_logos{
-    display: block;
-    text-align: center;
-}
-
-.aboutme_logos_such{
-    position: relative;
-    margin-right: 2.5rem;
-}
-
-.aboutme_logos_size{
-    width:4rem;
-    vertical-align: middle;
-}
-
-.aboutme_logos_such:hover .tool_tip{
-    opacity: 1;
-    visibility: visible;
-}
-
-#aboutme_env tr td{
-    vertical-align: top;
-    padding-left:1rem;
-}
-
-@media (max-width:480px) {
-    .aboutme_logos_such{
-        margin-right: 1.5rem;;
-    }
-    .aboutme_logos_size{
-        width:2.25rem;
-        margin-bottom: 1rem;
-    }
-    #aboutme_img{
-        width:90vw;
-    }
-    .aboutme_text{
-        padding:0;
-        margin-top:1rem;
-    }
-    
-    #aboutme_center_margin50{
-        width:auto;
-        margin:0 0 0 5vw;
-        overflow-x: scroll;
-    }
-    #aboutme_main_table{
-        table-layout: fixed;
-        width:50vw;
-    }
-    #aboutme_main{
-        width:55vw;
-    }
-    #aboutme_fron{
-        height:40rem;
-        margin-top:2rem;
-    }
-    #aboutme_fron_table{
-        vertical-align:top;
-    }
-    #aboutme_main p{
-        font-size:0.9rem;
-    }
-}
-
-.form_such{
-    width:50vw;
-    height:2160px;
-}
-
-@media (max-width:480px) {
-    .form_such{
-        width:90vw;
-        height:2160px;
-    }
-}
-
-.suneo_such{
-    width:35vw;
-    height:30vw;
-}
-
-@media (max-width:480px) {
-    .suneo_such{
-        width:80vw;
-        height:70vw;
-    }
-}

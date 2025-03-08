@@ -3,19 +3,19 @@ const now3 = new Date();
 const title何年 = now3.getFullYear()+1;
 
 document.title = title何年+"年カウントダウン！";
-document.getElementById("タイトル文字").textContent = title何年+"年カウントダウン！";
+document.getElementById("page_title").textContent = title何年+"年カウントダウン！";
 document.getElementById("カウントダウン文字").textContent = title何年+"年";
 
 },10)
 
 setInterval(function(){
     const now = new Date();
-    const 引かれる時刻 = new Date(now.getFullYear()+1, now.getMonth()+0, 0,'23','59','60');
+    const 引かれる時刻 = new Date(now.getFullYear()+1,0,1);
     const 残り = 引かれる時刻 - now;
 
     if(残り < 0) return false 
 
-    const 日  = Math.floor(残り / 1000 / 60 / 60 / 24);
+    const 日  = Math.floor(残り / 1000 / 60 / 60 / 24 );
     const 時間 = Math.floor(残り / 1000 / 60 / 60 ) % 24;
     const 分  = Math.floor(残り / 1000 / 60) % 60;
     const 秒  = Math.floor(残り / 1000) % 60;

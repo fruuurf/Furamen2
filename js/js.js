@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 var mobile_id_display = mobile_id.style.display;
 
                 if(mobile_id_display=="flex"){
+                    mobile_id.style.opacity = "0";
                     mobile_id.style.display = "none";
                     console.log("スマホ用メニュー：close");
                 }else{
+                    mobile_id.style.opacity = "1";
                     mobile_id.style.display = "flex";
                     console.log("スマホ用メニュー：open");
                 }

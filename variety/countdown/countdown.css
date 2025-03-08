@@ -8,6 +8,15 @@
     }
 }
 
+.content::-webkit-scrollbar{
+    display:none !important;
+}
+
+body{
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
 #カウントダウン文字{
     font-family: 'Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
