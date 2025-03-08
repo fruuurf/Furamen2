@@ -551,6 +551,10 @@ summary:active{
     filter:brightness(0);
 }
 
+#century_gothic,.century_gothic{
+    font-family:'Century Gothic','Furura','BIZ UDPゴシック',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
+}
+
 
 /* ヘッダー */
 .header_all{
@@ -717,8 +721,23 @@ summary:active{
     height: 1.5rem;
 }
 
-#footer_icon{
+#footer_icon_white{
+    display:none;
     height:1.5rem;
+}
+
+#footer_icon_dark{
+    display:inline;
+    height:1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    #footer_icon_white{
+        display:inline;
+    }
+    #footer_icon_dark{
+        display:none;
+    }
 }
 
 #footer_heading{

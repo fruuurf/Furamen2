@@ -42,6 +42,48 @@ document.addEventListener("DOMContentLoaded", function() {
     background.style.backgroundImage = "url('" + backgroundimg + "')";
 })
 
+//年齢系計算
+document.addEventListener("DOMContentLoaded", function() {
+    var today = new Date();
+    var subtractyear = today.getFullYear() - 2008;
+    if(today.getMonth()+1 <= 2 && today.getDate() < 6){             //2月6日より前だったら年齢を1引く
+        subtractyear -= 1;
+    }
+    switch(today.getMonth()+1<=3 ? subtractyear-1 : subtractyear){  //3月以前だったら1個前の学年判定
+        case 16:
+            subtractyear = subtractyear + "才(高2)";
+            break;
+        case 17:
+            subtractyear = subtractyear + "才(高3)";
+            break;
+        case 18:
+            subtractyear = subtractyear + "才(大1)";
+            break;
+        case 19:
+            subtractyear = subtractyear + "才(大2)";
+            break;
+        case 20:
+            subtractyear = subtractyear + "才(大3)";
+            break;
+        case 21:
+            subtractyear = subtractyear + "才(大4)";
+            break;
+        default:
+    }
+    console.log("年齢："+subtractyear);
+
+    //PC歴計算
+    var subtractPCyear = today.getFullYear() - 2016;
+    if(today.getMonth()+1 < 8){                                     //8月以前だったら1年前判定
+        subtractPCyear -= 1;
+    }
+    subtractPCyear = subtractPCyear + "年";
+    console.log("PC歴："+subtractPCyear);
+
+    document.getElementById("age").textContent = subtractyear;
+    document.getElementById("PCage").textContent = subtractPCyear;
+});
+
 
 //フッターの右の文のやつ(作りかけ)
 /*
