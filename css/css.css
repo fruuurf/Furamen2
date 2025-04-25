@@ -402,11 +402,13 @@ summary:active{
 }
 
 .image_button:hover .image_button_text{
+    -webkit-backdrop-filter: blur(25px) brightness(0.85);
     backdrop-filter:blur(25px) brightness(0.85);
     opacity:1;
 }
 
 .image_button:hover .image_button_text_free{
+    -webkit-backdrop-filter: blur(25px) brightness(0.85);
     backdrop-filter:blur(25px) brightness(0.85);
     opacity:1;
 }
@@ -512,6 +514,12 @@ summary:active{
     height:calc(50vh - 2.25rem);
 }
 
+@media (max-width:480px) {
+    #index_minus{
+        height:calc(50vh - 5rem);
+    }
+}
+
 #margin_0{
     margin:0 !important;
     line-height: 100% !important;
@@ -563,6 +571,7 @@ summary:active{
     left:0;
     width: 100vw;
     margin:0;
+    -webkit-backdrop-filter: blur(15px) brightness(0.65);
     backdrop-filter: blur(15px) brightness(0.65);
     z-index:100;
     filter:drop-shadow(0px 0px 2.5px #4b4b4b);
@@ -758,6 +767,16 @@ summary:active{
 #footer_t2{
     display: inline-block;
     font-size:1.15rem;
+}
+
+@media (max-width:480px) {
+    #footer_icon_white,#footer_icon_dark{
+        display: block;
+        height:3rem;
+    }
+    #footer_heading{
+        margin-left:0;
+    }
 }
 
 .footer_flex{
@@ -958,20 +977,6 @@ summary:active{
 
 #io{
     border-radius: 0.5rem;
-}
-
-#aboutme_img{
-    display: inline-block;
-    width:15rem;
-    margin: 0;
-}
-
-.aboutme_text{
-    display: inline-block;
-    vertical-align: top;
-    height:15rem;
-    padding-left: 1rem;
-    margin:0;
 }
 
 #aboutme_main_table{

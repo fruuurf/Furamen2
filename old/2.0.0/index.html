@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link href="./css/css.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ふらめん</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="header"></div>
+    <div id="page_title" class="mobile">ふらめんのホームページ</div>
+    
+    <div id="background">
+    <div class="backgroundfilter">
+
+    <div class="hp_space" id="index_minus"></div>
+    <div class="main_title">
+        <span id="main_title">ふらめん</span>
+        <span id="main_title2">
+            <span id="main_title_mini">の</span>
+            <span id="main_title_mini2">ホームページ</span>
+        </span>
+        <span id="main_title_version">version</span></div>
+    <div class="hp_space"></div>
+
+    <script>
+        var version = "ver.2.0.0"
+        var day = "24.03.09"
+        $('#main_title_version').text(version);
+        $(function() {
+            $('#main_title_version')
+            .mouseover(function(e) {
+                $(this).text(day);
+            })
+            .mouseout(function(e) {
+                $(this).text(version);
+            });
+        });
+    </script>
+
+    </div>
+    </div>
+
+    <div class="center_margin50">
+    <div class="qp_space"></div>
+
+    <h1>Very Very Simple About me</h1>
+    <img src="images/icon1.png" id="aboutme_img">
+    <div class="aboutme_text">
+        <div class="aboutme_text_background">
+            <h2 id="margin_0">ふらめん</h2>
+            <h6 id="margin_0" class="century_gothic">Furamen</h6>
+        </div>
+        <br>
+        <p>♂</p>
+        <p>2008.02.06 -</p>
+        <p id="age">xx才</p>
+        <p>JP ｜ 愛知県</p>
+        <small><a href="./about.html">About me(詳しめ)</a></small>
+    </div>
+    
+    </div>
+
+    <div class="qp_space"></div>
+    
+    <div id="footer"></div>
+
+    <script type="text/javascript" src="./js/js.js" chearset="utf-8" defer></script>
+
+</body>
+</html>
