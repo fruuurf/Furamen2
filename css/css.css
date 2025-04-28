@@ -702,17 +702,15 @@ summary:active{
         padding:0.25rem 0 0 0.25rem;
     }
     #header_mobile_table{
-        margin:0.5rem 0 25vh 1rem;
+        margin:0.5rem 0 8rem 1rem;
     }
     #header_right{
         display:flex;
         flex-direction:column;
         align-items:center;
-        height:3.5vh;
-
     }
     .header_logos{
-        margin:0 0 3vh 0;
+        margin:0 0 1rem 0;
     }
     #header_logos_right{
         margin:0;
