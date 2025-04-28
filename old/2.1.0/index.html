@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link href="./css/css.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ふらめん</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="header"></div>
+    <div id="page_title" class="mobile">ふらめんのホームページ</div>
+    
+    <div id="background">
+    <div class="backgroundfilter">
+
+    <div class="hp_space" id="index_minus"></div>
+    <div class="main_title">
+        <span id="main_title">ふらめん</span>
+        <span id="main_title2">
+            <span id="main_title_mini">の</span>
+            <span id="main_title_mini2">ホームページ</span>
+        </span>
+        <span id="main_title_version">version</span></div>
+    <div class="hp_space"></div>
+
+    <script>
+        var version = "ver.2.1.0"
+        var day = "25.04.26"
+        $('#main_title_version').text(version);
+        $(function() {
+            $('#main_title_version')
+            .mouseover(function(e) {
+                $(this).text(day);
+            })
+            .mouseout(function(e) {
+                $(this).text(version);
+            });
+        });
+    </script>
+
+    </div>
+    </div>
+
+    <div class="qp_space"></div>
+
+    <div class="center_margin50" id="aboutme_center_margin50">
+
+    <table id="aboutme_main_table"><tr><td id="aboutme_main">
+        <br>
+        
+        <h1 id="margin_0">ふらめん</h1>
+        <h3 id="margin_0" class="century_gothic">Furamen</h3>
+    
+        <br>
+        <h6 id="notbold">2008.02.06 -</h6>
+        <p><span id="age">xx才</span> ｜ ♂ ｜ JP</p>
+    
+        <br>
+        <p>愛知県出身 / 愛知県在住</p>
+    
+        <p id="margin_2"><small>(一応)</small>KokkoSoft サブリーダー</p>
+    
+        <br>
+        <p id="margin_0">Image color</p>
+        <h6 class="background_0089ff"><div class="white" id="notbold">#0089FF</div></h6>
+    
+        <br><br>
+        <p>html / css / JS<small>(おべんきょう中)</small></p>
+        <p>Aviutl / YMM4 / Blender <small>/ Davinci Resolve</small></p>
+        <p>C++<small>(おべんきょう中)</small></p>
+    
+        <br><br>
+        <h6>好きなこと/もの</h6>
+        <p>PC、カメラ、工作、キャンプ etc...</p>
+    
+        <br>
+        <h6>好きな音楽</h6>
+        <p>ボカロ、EDM、界隈曲 etc...</p>
+    
+        <br>
+        <h6>好きな食べ物</h6>
+        <p>カレー、寿司、ラーメン、チキン南蛮 etc...</p>
+    
+        <br>
+        <h6>嫌いな食べ物</h6>
+        <p>きのこ類、貝類、その他ふにゃふにゃ系</p>
+    
+        <br>
+        <h6>PC歴</h6>
+        <p><span id="PCage">x年</span>(2016 - )</p>
+    
+    </td>
+        
+    <td id="aboutme_fron_table">
+        <img src="./images/平行(カメラなし).png" id="aboutme_fron">
+    </td></tr></table>
+    
+    </div>
+    </div>
+
+    <div class="center_margin75">
+    
+    <div class="sp_space"></div>
+    
+    <h3>名前の由来</h3>
+    <p>2019年ごろ、Switch新しいユーザー名を考えてたところ、ふと"ふらふらめんたいこ"という名前が思い浮かび、そのまま決定した。つまり特に意味はないってわけ。
+    <br>当時、他の候補に"みそしる"とかがあったようななかったような...</p>
+    <p>2025年、名前が長すぎたので略称の"ふらめん"を正式名称に変更。</p>
+    
+    <div class="sp_space"></div>
+
+    <h4>PC / スマホ / カメラ環境</h4>
+    <details class="details">
+        <summary>主に使っているPC</summary>
+
+            <details class="details_child">
+                <summary>1代目メインPC</summary>
+                <p><b>現在はノート(外出)メイン機として使用中</b></p>
+                <table id="aboutme_env">
+                    <tr>
+                        <td>CPU</td>
+                        <td>intel core i7 8705G</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>16GB</td>
+                    </tr>
+                    <tr>
+                        <td>SSD</td>
+                        <td>512GB</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">GPU</td>
+                        <td>RADEON RX VEGA M</td>
+                    </tr>
+                    <tr>
+                        <td>intel HD graphics 630</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">モニター</td>
+                        <td>4K<small>(ゲームとかが重くなるため1080pに設定して使用)</small></td>
+                    </tr>
+                    <tr>
+                        <td>1280x1024</td>
+                    </tr>
+                    <tr>
+                        <td>OS</td>
+                        <td>Windows10 Pro</td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td>type</td>
+                        <td>2in1ノート</td>
+                    </tr>
+                    <tr>
+                        <td>機種</td>
+                        <td>HP SPECTRE x360 15<small>(型番忘れたけど2018年くらいのモデル)</small></td>
+                    </tr>
+                    <tr>
+                        <td>使用用途</td>
+                        <td>外出用</td>
+                    </tr>
+                </table>
+            </details>
+            <details class="details_child">
+                <summary>2代目メインPC</summary>
+                <br>
+                <h6><b>&nbsp;おなまえ：半ゲーミング豆腐</b></h6>
+                <h5 class="color_0089ff"><b>&nbsp;ver.2.6</b></h5>
+                <br>
+                <table id="aboutme_env">
+                    <tr>
+                        <td>CPU</td>
+                        <td>intel core i5 12600KF</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>DDR4 2666MHz 32GB(8GBx4 / Kingston FURY Beast)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">SSD</td>
+                        <td>M.2 NVMe 500GB(Crucial P2)</td>
+                    </tr>
+                    <tr>
+                        <td>M.2 NVMe 1TB(Crucial P3)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">HDD</td>
+                        <td>1TB</td>
+                    </tr>
+                    <tr>
+                        <td>500GB(Ubuntu用)</td>
+                    </tr>
+                    <tr>
+                        <td>4TB</td>
+                    </tr>
+                    <tr>
+                        <td>4TB(RAID1用)</td>
+                    </tr>
+                    <tr>
+                        <td>GPU</td>
+                        <td>NVIDIA GeForve GTX1650</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">モニター</td>
+                        <td>1680x1050</td>
+                    </tr>
+                    <tr>
+                        <td>1280x1024</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">OS</td>
+                        <td>Windows11 Home</td>
+                    </tr>
+                    <tr>
+                        <td>Ubuntu 24.04 LTS</td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td>マウス</td>
+                        <td>Logicool MX Master 3S</td>
+                    </tr>
+                    <tr>
+                        <td>キーボード</td>
+                        <td>Logicool K835TKL(白/赤軸)</td>
+                    </tr>
+                    <tr>
+                        <td>マウス</td>
+                        <td>Logicool MX Master 3S(グラファイト)</td>
+                    </tr>
+                    <tr>
+                        <td>スピーカー</td>
+                        <td>Creative Pebble V2</td>
+                    </tr>
+                    <tr>
+                        <td>拡張ボード</td>
+                        <td>IEEE1394b x3(CIF-FW8P32)</td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td>type</td>
+                        <td>デスクトップ</td>
+                    </tr>
+                    <tr>
+                        <td>用途</td>
+                        <td>メイン機、動画編集、ゲーム、プログラミング、ネットetc...</td>
+                    </tr>
+                </table>
+                <br>
+                <h6>&emsp;&nbsp;変更部分</h6>
+                <p>&emsp;&emsp;ver.1.0は初代メインPC</p>
+                <details class="details_child">
+                    <summary>ver.2.6</summary>
+                    <h5 class="color_0089ff">2025.01更新</h5>
+                    <p>4TBHDDx2を増設 RAID1でバックアップを取りながら4TBHDDとして運用</p>
+                </details>
+                <details class="details_child">
+                    <summary>ver.2.5</summary>
+                    <h5 class="color_0089ff">2024.10更新</h5>
+                    <p>マウスをLogicool M546からLogicool MX Master 3Sに変更</p>
+                </details>
+                <details class="details_child">
+                    <summary>ver.2.4</summary>
+                    <h5 class="color_0089ff">2024.09更新</h5>
+                    <p>IEEE1394b端子を増設</p>
+                    <p>Ubuntu 24.04 LTSとのデュアルブートを開始</p>
+                    <p>Ubuntu用にHDD500GBを増設<small>&nbsp;SSD起動の速さに感動した</small></p>
+                </details>
+                <details class="details_child">
+                    <summary>ver.2.3</summary>
+                    <h5 class="color_0089ff">2024.05更新</h5>
+                    <p>スピーカーをELECOM MS-P08UECBKからCreative Pebble V2に変更</p>
+                </details>
+                <details class="details_child">
+                    <summary>ver.2.2</summary>
+                    <h5 class="color_0089ff">2023.09更新</h5>
+                    <p>メモリを16GB(8GBx2)から32GB(8GBx4)に増設</p>
+                    <p>M.2 NVMe 1TBを増設</p>
+                </details>
+                <details class="details_child">
+                    <summary>ver.2.1</summary>
+                    <h5 class="color_0089ff">2023.04更新</h5>
+                    <p>キーボードをハードオフ産中華ゲーミングキーボードからLogicool K835に変更</p>
+                </details>
+                <details class="details_child">
+                    <summary>ver.2.0</summary>
+                    <h5 class="color_0089ff">2022.11更新</h5>
+                    <p>とりあえず完成</p>
+                </details>
+                <br>
+                
+            </details>
+    </details>
+
+    <details class="details">
+        <summary>主に使っているスマホ</summary>
+        <p class="details_p"><b>こやつらはカメラとしての役目も兼ねているぞ！</b></p>
+        <details class="details_child">
+            <summary>1代目メインスマホ</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>iPhone5s</td>
+                </tr>
+                <tr>
+                    <td>容量</td>
+                    <td>16GB</td>
+                </tr>
+                <tr>
+                    <td>カラー</td>
+                    <td>スペースグレイ</td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details_child">
+            <summary>2代目メインスマホ</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>iPhone12mini</td>
+                </tr>
+                <tr>
+                    <td>容量</td>
+                    <td>128GB</td>
+                </tr>
+                <tr>
+                    <td>カラー</td>
+                    <td>ホワイト</td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details_child">
+            <summary>Android</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>Xperia Ace</td>
+                </tr>
+                <tr>
+                    <td>容量</td>
+                    <td>64GB</td>
+                </tr>
+                <tr>
+                    <td>カラー</td>
+                    <td>ブラック</td>
+                </tr>
+            </table>
+        </details>
+    </details>
+
+    <details class="details">
+        <summary>主に使っているカメラ</summary>
+        <details class="details_child">
+            <summary>メイン一眼</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>Lumix GH6</td>
+                </tr>
+                <tr>
+                    <td>解像度(写真)</td>
+                    <td>25MP(ハイレゾショットで100MP)</td>
+                </tr>
+                <tr>
+                    <td>解像度(動画)</td>
+                    <td>5.8K30 / 5.7K60 / 4K120 / 1080p300</td>
+                </tr>
+                <tr>
+                    <td>よく使う解像度(動画)</td>
+                    <td>4K120 / 4K60 / 1080p300 / 1080p240 / 1080p60</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">シャッタースピード</td>
+                    <td>バルブ(最大30分) / 60秒-1/8000秒</td>
+                </tr>
+                <tr>
+                    <td>バルブ(最大60秒) / 60秒-1/32000秒(電子シャッター)</td>
+                </tr>
+                <tr>
+                    <td>ISO感度(写真)</td>
+                    <td>50 / 100-25600</td>
+                </tr>
+                <tr>
+                    <td>ISO感度(動画)</td>
+                    <td>50 / 100-12800</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>動画 / 広角担当</td>
+                </tr>
+            </table>
+            <p class="color_0089ff"><b>LEICA DG VARIO-ELMARIT 12-60mm</b></p>
+            <table id="aboutme_env">
+                <tr>
+                    <td>焦点距離</td>
+                    <td>12-60mm(35mm換算：24-120mm)</td>
+                </tr>
+                <tr>
+                    <td>F値</td>
+                    <td>F2.8-4.0</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>いつものレンズ</td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details_child">
+            <summary>サブ一眼</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>Canon EOS Kiss X6i</td>
+                </tr>
+                <tr>
+                    <td>解像度(写真)</td>
+                    <td>18MP</td>
+                </tr>
+                <tr>
+                    <td>解像度(動画)</td>
+                    <td>1080p30 / 720p60 / 480p30</td>
+                </tr>
+                <tr>
+                    <td>よく使う解像度(動画)</td>
+                    <td>1080p30 / 720p60</td>
+                </tr>
+                <tr>
+                    <td>シャッタースピード</td>
+                    <td>バルブ / 30秒-1/4000秒</td>
+                </tr>
+                <tr>
+                    <td>ISO感度(写真)</td>
+                    <td>100-12800 / 25600</td>
+                </tr>
+                <tr>
+                    <td>ISO感度(動画)</td>
+                    <td>100-6400 / 12800</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>写真 / 望遠担当</td>
+                </tr>
+            </table>
+            <p class="color_0089ff"><b>EF-S 24mm F2.8 STM</b></p>
+            <table id="aboutme_env">
+                <tr>
+                    <td>焦点距離</td>
+                    <td>24mm(35mm換算：36mm)</td>
+                </tr>
+                <tr>
+                    <td>F値</td>
+                    <td>F2.8</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>近距離撮影用</td>
+                </tr>
+            </table>
+            <p class="color_0089ff"><b>EF-S 55-250mm F4-5.6 IS</b></p>
+            <table id="aboutme_env">
+                <tr>
+                    <td>焦点距離</td>
+                    <td>55-250mm(35mm換算：82.5-375mm)</td>
+                </tr>
+                <tr>
+                    <td>F値</td>
+                    <td>F4.0-5.6</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>遠距離撮影用</td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details_child">
+            <summary>メインGoPro</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>GoPro HERO7 Black</td>
+                </tr>
+                <tr>
+                    <td>解像度(写真)</td>
+                    <td>12MP</td>
+                </tr>
+                <tr>
+                    <td>解像度(動画)</td>
+                    <td>4K60 / 1080p240 / 720p240</td>
+                </tr>
+                <tr>
+                    <td>よく使う解像度(動画)</td>
+                    <td>4K60 / 1080p240 / 1080p60</td>
+                </tr>
+                <tr>
+                    <td>焦点距離</td>
+                    <td>3mm(35mm換算：15mm)</td>
+                </tr>
+                <tr>
+                    <td>F値</td>
+                    <td>F2.8?</td>
+                </tr>
+                <tr>
+                    <td>シャッタースピード</td>
+                    <td>1/125秒-1/2000秒</td>
+                </tr>
+                <tr>
+                    <td>ISO感度</td>
+                    <td>100-3200</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>外出用、普通のカメラだと壊れるような撮影用、4K撮影用、メインカメラ</td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details_child">
+            <summary>サブGoPro</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>GoPro HERO5 Black</td>
+                </tr>
+                <tr>
+                    <td>解像度(写真)</td>
+                    <td>12MP</td>
+                </tr>
+                <tr>
+                    <td>解像度(動画)</td>
+                    <td>4K30 / 1080p120 / 720p240 / 480p240</td>
+                </tr>
+                <tr>
+                    <td>よく使う解像度(動画)</td>
+                    <td>4K30 / 1080p120 / 1080p60 / 720p60</td>
+                </tr>
+                <tr>
+                    <td>焦点距離</td>
+                    <td>3mm(35mm換算：15mm)</td>
+                </tr>
+                <tr>
+                    <td>F値</td>
+                    <td>F2.8?</td>
+                </tr>
+                <tr>
+                    <td>シャッタースピード</td>
+                    <td>不明</td>
+                </tr>
+                <tr>
+                    <td>ISO感度</td>
+                    <td>不明</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>外出用、普通のカメラだと壊れるような撮影用、4K撮影用、メインカメラ</td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details_child">
+            <summary>業務用ビデオカメラ</summary>
+            <table id="aboutme_env">
+                <tr>
+                    <td>機種名</td>
+                    <td>SONY HVR-Z1J</td>
+                </tr>
+                <tr>
+                    <td>解像度(写真)</td>
+                    <td>なし</td>
+                </tr>
+                <tr>
+                    <td>解像度(動画)</td>
+                    <td>1080i60 / 480i60</td>
+                </tr>
+                <tr>
+                    <td>よく使う解像度(動画)</td>
+                    <td>1080i60</td>
+                </tr>
+                <tr>
+                    <td>焦点距離</td>
+                    <td>4.5-54mm(35mm換算：32.5-390mm)</td>
+                </tr>
+                <tr>
+                    <td>F値</td>
+                    <td>F1.6-2.8</td>
+                </tr>
+                <tr>
+                    <td>シャッタースピード</td>
+                    <td>1/4秒-1/10000</td>
+                </tr>
+                <tr>
+                    <td>ISO感度</td>
+                    <td>0-18db</td>
+                </tr>
+                <tr>
+                    <td>用途</td>
+                    <td>謎</td>
+                </tr>
+            </table>
+        </details>
+    </details>
+
+    </div>
+
+    <div class="sp_space"></div>
+
+    <h6 class="center">無駄に詳しい<a href="./wiki/ふらふらめんたいこ.html">About Me</a></h6>
+
+    <div class="sp_space"></div>
+    
+    <div id="footer"></div>
+
+    <script type="text/javascript" src="./js/js.js" chearset="utf-8" defer></script>
+
+</body>
+</html>
