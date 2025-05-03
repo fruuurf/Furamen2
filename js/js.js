@@ -9,14 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
             function menu_open(){
                 var mobile_id = document.getElementById("header_flex");
                 var mobile_id_display = mobile_id.style.display;
+                var mobile_id2 = document.getElementById("header_mobile");
 
                 if(mobile_id_display=="flex"){
-                    mobile_id.style.opacity = "0";
                     mobile_id.style.display = "none";
+                    mobile_id2.style.height = "2.5rem"
                     console.log("スマホ用メニュー：close");
                 }else{
-                    mobile_id.style.opacity = "1";
                     mobile_id.style.display = "flex";
+                    mobile_id2.style.height = "18.5rem"
                     console.log("スマホ用メニュー：open");
                 }
             }
