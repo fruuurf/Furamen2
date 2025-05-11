@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.log("スマホ用メニュー：close");
                 }else{
                     mobile_id.style.display = "flex";
-                    mobile_id2.style.height = "18.5rem"
+                    mobile_id2.style.height = "14.5rem"
                     console.log("スマホ用メニュー：open");
                 }
             }

@@ -736,7 +736,7 @@ summary:active{
         padding:0.25rem 0 0 0.25rem;
     }
     #header_mobile_table{
-        margin:0.5rem 0 8rem 1rem;
+        margin:0.5rem 0 0rem 1rem;
     }
     #header_right{
         display:flex;
@@ -776,15 +776,6 @@ summary:active{
     height:1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    #footer_icon_white{
-        display:inline;
-    }
-    #footer_icon_dark{
-        display:none;
-    }
-}
-
 #footer_heading{
     display: inline-block;
     font-family:'Noto Sans JP',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
@@ -817,11 +808,11 @@ summary:active{
     }
     @media (prefers-color-scheme: light) {
         #footer_icon_white{
-            display:block;
-            height:3rem;
+            display:none;
         }
         #footer_icon_dark{
-            display:none;
+            display:inline;
+            height:3rem;
         }
     }
     #footer_heading{
