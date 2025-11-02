@@ -1,0 +1,61 @@
+#Er404{
+    text-align: center;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    font-size:5rem;
+    line-height:4.5rem;
+    color: #ff0000;
+    margin:0;
+}
+
+.circle{
+    display: block;
+    width:0.75rem;
+    height:0.75rem;
+    transform: scale(15, 1);
+    border-radius:200vw;
+    background: #ff0000;
+    margin: 0 auto;
+}
+
+.rods{
+    display: flex;
+    width:11.5rem;
+    margin:0 auto;
+    justify-content:space-between;
+}
+
+.rod{
+    display:inline-block;
+    width:0.25rem;
+    height:3rem;
+    background: #4b4b4b;
+    margin:0 0 20vh;
+}
+
+.Error{
+    display: block;
+    background:#fff;
+    width: 12.5rem;
+    margin: 40vh auto 0;
+    user-select: none;
+}
+
+.Exp{
+    text-align: center;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    user-select: none;
+    font-size:1.75rem;
+    line-height:1.75rem;
+    color: #ff0000;
+    padding-bottom:0.25rem;
+}
+
+@media screen and (max-width:480px){
+    .Error{
+        margin: 30vh auto 0;
+    }
+}

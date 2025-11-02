@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <link href="../../css/css.css?<?php echo date('YmdHi'); ?>" rel="stylesheet">
+    <script type="text/javascript" src="../../js/js.js" chearset="utf-8"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHS風配布所</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="header" data-directory="../../"></div>
+    <div id="page_title">VHS風配布所</div>
+    <div class="t_space"></div><div class="t_space"></div>
+
+    <div class="center">
+        <h4>YMM4版VHS風エフェクト ver.1</h4>
+        <p>YMM4でドット妨害を再現できるexoファイル形式のエフェクトです</p>
+    </div>
+    <div class="center_margin75">
+
+    <h3>注意事項</h3>
+
+        <p><b><div class="red">結構重いです</div></b></p>
+        <p class="tab">編集するときはエフェクトのどれかを非表示にするか画質を下げて編集することをおすすめします</p>
+    
+    <div class="t_space"></div>
+
+    <div class="center">
+        <a class="button" href="https://drive.google.com/drive/folders/1okmeYtL6l3MhsYKhCJUgeQN9jHkvFTLr?usp=drive_link" target="_blank">
+            <div>ダウンロード(Googleドライブ)</div>
+        </a>
+    </div>
+
+    <div class="sp_space"></div>
+
+    <h3>入れ方/使い方</h3>
+    <div class="中央寄せの左寄せ">
+    <p>1.タイムライン上部のテンプレートアイコン or 右クリック→テンプレートからアイテムを追加　→　テンプレートを編集 でテンプレートの編集画面を開く</p>
+    <p>2.編集ウィンドウ左上の"テンプレートをインポート"アイコンを押す</p>
+    <p>3.ダウンロードしたymmtファイルを開く</p>
+    <p>4.インポート完了！</p>
+    <p>5.素材、映像の長さをご自由に調整</p>
+    <p>6.できた！</p>
+    </div>
+
+    <div class="sp_space"></div>
+
+    <h3>解説</h3>
+    <section>
+    <h5>背景</h5>
+    <p>Aviutl版のノイズの役割　差分合成することで虹色のノイズも再現できてる(気がする)</p>
+    <div class="flex">
+        <img src="./vhs/ymm4_ver1/noise.png" class="vhs_image_ymm4">
+        <img src="./vhs/ymm4_ver1/noise(2).png" class="vhs_image_ymm4">
+    </div>
+    </section>
+
+    <section>
+    <h5>上から2番目の画面の複製</h5>
+    <p>VHS特有の字幕とかに見える残像みたいなやつ(語彙力)</p>
+    <p>2個の画面の複製で組み合わされていて、こっちは字幕の左側によく出る暗くなっている部分を再現</p>
+    <br>
+    <h6>基本部分</h6>
+    <p>彩度合成されてる
+    <p>x座標が-5pxになってる理由は忘れた() 多分Aviutl版から直訳した時の名残</p>
+    <h6>片方向ブラー</h6>
+    <p>中核部分　てかこれやるためだけに存在してるだろこの映像エフェクト</p>
+    <img src="./vhs/ymm4_ver1/frame2.png" class="vhs_image_ymm4">
+    </section>
+
+    <section>
+    <h5>上から3番目の画面の複製</h5>
+    <p>残像その2</p>
+    <p>こっちはメインの部分　字幕の右側によく出る残像みたいな部分を再現</p>
+    <br>
+    <h6>基本部分</h6>
+    <p>同時に乗算合成で上記の片方向ブラーの効果をより発揮させている</p>
+    <h6>片方向ブラー</h6>
+    <p>中核部分</p>
+    <div class="flex">
+    <img src="./vhs/ymm4_ver1/frame3.png" class="vhs_image_ymm4">
+    </div>
+    </section>
+    
+    <section>
+    <h5>上から4番目の画面の複製</h5>
+    <p>主にVHSの基礎(?)の部分</p><br>
+    <h6>基本部分</h6>
+    <p>焼き込み(リニア)合成にすることでそれっぽいコントラストにする</p>
+    <p>x座標を3pxずらしている</p>
+    <h6>色反転</h6>
+    <p>VHS特有の輪郭をx座標のずらしと組み合わせて再現している</p>
+    <p>色反転してあの独特な輪郭を作り出してるのは本物のVHSと同じという噂を聞いたことがある　真偽は不明</p>
+    <h6>色調補正</h6>
+    <p>行き過ぎたコントラストをここで調整</p>
+    <h6>片方向ブラー</h6>
+    <p>x座標ずらしと色反転で発生したくっきりしすぎた輪郭をここで滑らかにしている</p>
+    <div class="flex">
+        <img src="./vhs/ymm4_ver1/frame4.png" class="vhs_image_ymm4">
+        <img src="./vhs/ymm4_ver1/frame4(2).png" class="vhs_image_ymm4">
+        <img src="./vhs/ymm4_ver1/frame4(3).png" class="vhs_image_ymm4">
+    </div>
+    </section>
+    
+    <section>
+    <h5>上から5番目の画面の複製</h5>
+    <p>輝度調整</p><br>
+    <h6>基本部分</h6>
+    <p>特になし</p>
+    <h6>色調補正</h6>
+    <p>このままでは輝度が低すぎるのでここで調整</p>
+    <p>4番目の画面の複製にある色調補正で一緒に行わない理由は合成モードが標準じゃないことが原因で輝度を上げても全体的に明るくならないから</p>
+    <img src="./vhs/ymm4_ver1/frame5.png" class="vhs_image_ymm4">
+    </section>
+
+    <section>
+    <h5>上から6番目の画面の複製</h5>
+    <p>画面の両端の黒い部分</p>
+    <h6>基本部分</h6>
+    <p>"複製元を削除"をオンにしないと黒い部分が生成されない</p>
+    <h6>拡大縮小</h6>
+    <p>横にほんの少しだけ押しつぶすことでそれっぽくしてる</p>
+    <img src="./vhs/ymm4_ver1/frame6.png" class="vhs_image_ymm4">
+    </section>
+
+    <section>
+    <h5>上から7番目の画面の複製</h5>
+    <p>画面の下の方にある少し映像がずれてるやつ</p>
+    <h6>基本部分</h6>
+    <p>x座標をすこし右にずらし、輝度合成にすることで同じようでちょっと違う映像(語彙力)感を出してる</p>
+    <h6>クリッピング</h6>
+    <p>画面の下にだけ表示するようにしてる</p>
+    <h6>枠線</h6>
+    <p>左の黒い謎の空間を無理矢理作ってる</p>
+    <h6>ランダム移動</h6>
+    <p>ランダム感を出してる</p>
+    <div class="flex">
+        <img src="./vhs/ymm4_ver1/frame7.png" class="vhs_image_ymm4">
+        <img src="./vhs/ymm4_ver1/frame7(2).png" class="vhs_image_ymm4">
+        <img src="./vhs/ymm4_ver1/frame7(3).png" class="vhs_image_ymm4">
+    </div>
+    </section>
+
+    </div>
+    </div>
+
+    <div class="t_space"></div>
+
+    <div class="center">
+        <a class="button" href="https://drive.google.com/drive/folders/1okmeYtL6l3MhsYKhCJUgeQN9jHkvFTLr?usp=drive_link" target="_blank"><div class="ボタン"><small>上に戻るのめんどい人用</small><br>ダウンロードボタン(Googleドライブ)</div></a>
+    </div>
+
+    <div class="t_space"></div>
+
+    <div id="footer" data-directory="../../"></div>
+</body>

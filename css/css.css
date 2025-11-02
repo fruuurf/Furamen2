@@ -1,7 +1,7 @@
 /* ルート系 */
 html{
     font-size:18px;
-    font-family:'BahnSchrift','Century Gothic','Furura','BIZ UDPゴシック',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
+    font-family:'BahnSchrift','Century Gothic','Futura','BIZ UDPゴシック',"ヒラギノ角ゴ Pro","メイリオ",'Meiryo UI','Meiryo',"ＭＳゴシック",'MS Gothic','sans-serif';
 }
 
 body{
@@ -58,7 +58,7 @@ h1::selection,h3::selection,h5::selection{
 p{
     font-size: 1rem;
     font-weight: 100;
-    margin:0.5rem 0;
+    margin:0.5rem 0 !important;
     color: var(--text);
 }
 
@@ -162,6 +162,10 @@ a{
     color:#0055ff;
 }
 
+a:hover{
+    filter:brightness(0.85);
+}
+
 hr{
     border:2px solid;
 }
@@ -181,7 +185,7 @@ details{
 }
 
 summary{
-    background:var(--dark-background);
+    background:var(--pale-background);
     font-size:1.5rem;
     font-weight: 100;
     padding:0.5rem 0 0.35rem 1rem;
@@ -254,6 +258,10 @@ summary:active{
     ::-webkit-scrollbar-thumb:active{
         background: #4b4b4b;
     }
+}
+
+section{
+    margin-bottom: 3rem;
 }
 
 /* インフラ系 */
@@ -356,19 +364,27 @@ summary:active{
 
 
 .button{
+    position: relative;
     display: inline-block;
     background: #0055ff;
     color:#fff;
+    border-bottom:5px #0041af solid;
     padding:0.75rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
 }
 
 .button:hover,.vertical_button:hover{
-    background:#0032ff;
+    top:5px;
+    filter: brightness(0.85);
+}
+
+.button:hover{
+    border-bottom:0;
+    margin-bottom:5px;
 }
 
 .button:active,.vertical_button:active{
-    background:#0032e1;
+    filter: brightness(0.75);
 }
 
 .vertical_button{
@@ -394,6 +410,12 @@ summary:active{
         width:45vw;
         margin:0 0.5rem 0.25rem 0;
     }
+}
+
+#flex,.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 
@@ -431,6 +453,10 @@ summary:active{
     -webkit-backdrop-filter: blur(25px) brightness(0.85);
     backdrop-filter:blur(25px) brightness(0.85);
     opacity:1;
+}
+
+.image_button_image:hover{
+    filter:brightness(0.85);
 }
 
 .image_button_text{
@@ -507,8 +533,12 @@ summary:active{
 }
 
 
-.tab{
+.tab,#tab{
     margin-left: 2rem;
+}
+
+.halftab,#halftab{
+    margin-left: 1rem;
 }
 
 .t_space{
@@ -530,6 +560,11 @@ summary:active{
 /* t:恐らくタイトルスペース */
 /* spてなんだ */
 
+.t_horspace{
+    display: inline-block;
+    width:3rem;
+}
+
 #index_minus{
     height:calc(50vh - 2.25rem);
 }
@@ -549,12 +584,20 @@ summary:active{
     margin:2rem 0 !important;
 }
 
+#padding_0{
+    padding:0 !important;
+}
+
 #notbold{
     font-weight:normal !important;
 }
 
 #red,.red{
     color:#ff0032;
+}
+
+#orange,.orange{
+    color:#ff6400;
 }
 
 #white,.white{
@@ -573,6 +616,10 @@ summary:active{
     display: inline-block;
     background: #0089ff;
     padding-top:0.25rem;
+}
+
+#background_0089ff::selection,.background_0089ff::selection{
+    color:#0089ff;
 }
 
 #icon_white,.icon_white{
@@ -796,10 +843,19 @@ summary:active{
     font-size:1.15rem;
 }
 
+@media (prefers-color-scheme: dark) {
+    #footer_icon_white{
+        display:inline;
+    }
+    #footer_icon_dark{
+        display:none;
+    }
+}
+
 @media (max-width:480px) {
     @media (prefers-color-scheme: dark) {
         #footer_icon_white{
-            display:block;
+            display:inline;
             height:3rem;
         }
         #footer_icon_dark{
@@ -1122,6 +1178,26 @@ h6#operationsever{
     }
 }
 
+.links_mine_icons{
+    width:5rem;
+}
+
+.links_mine_title{
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    color:var(--text);
+    font-size: 1.5rem;
+}
+
+.detail_oldversion .vertical_button:first-of-type{
+    border-radius:0.5rem 0.5rem 0 0;
+}
+
+.detail_oldversion .vertical_button:last-of-type{
+    border-radius:0 0 0.5rem 0.5rem;
+}
+
 .form_such{
     width:50vw;
     height:2160px;
@@ -1143,5 +1219,43 @@ h6#operationsever{
     .suneo_such{
         width:80vw;
         height:70vw;
+    }
+}
+
+.vhs_table{
+    text-align: left;
+    border:var(--pale-text) 1px solid;
+    border-spacing:0;
+}
+
+.vhs_table th{
+    padding:0.5rem 1rem 0.5rem 0.5rem;
+    border:var(--pale-text) 1px solid;
+    margin:0;
+}
+
+.vhs_table h6,p{
+    margin: 0;
+}
+
+.vhs_image{
+    display: block;
+    width:25vw;
+    padding:0.5rem 0.5rem 0 0;
+}
+
+.vhs_image_ymm4{
+    display:block;
+    width:15vw;
+    padding:0.5rem 0.5rem 0 0;
+}
+
+@media (max-width:480px) {
+    .vhs_image{
+        width: 90vw;
+    }
+    .vhs_image_ymm4{
+         width: 90vw;
+        padding:0;
     }
 }
